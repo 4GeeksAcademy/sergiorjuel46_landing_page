@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export function Card({ title, text }) {
   return (
-    <div className="col-3 d-flex">
-      <div className="card d-flex flex-column w-100">
+    <div className="d-flex">
+      <div className="card d-flex flex-column">
         <img
           src="https://picsum.photos/seed/picsum/200/300"
           className="card-img-top"  

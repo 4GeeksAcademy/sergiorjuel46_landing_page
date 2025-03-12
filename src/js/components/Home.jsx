@@ -1,4 +1,6 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import { Navbar } from "./navbar";
 import { Jumbotron } from "./jumbotron";
 import { Card } from "./card";
@@ -11,7 +13,7 @@ const Home = () => {
 			<Navbar />
 			<Jumbotron />
 			<div className="container">
-				<div className="row row-cols-auto g-4 mt-2">
+				<div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 m-2">
 					<Card title="Card 1" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. " />
 					<Card title="Card 2" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ipsam maxime, praesentium debitis accusamus id voluptates iusto." />
 					<Card title="Card 3" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ipsam maxime, praesentium debitis accusamus id voluptates iusto. Nihil nostrum magni, doloremque tenetur sunt voluptatem suscipit mollitia dicta asperiores, corporis corrupti?" />

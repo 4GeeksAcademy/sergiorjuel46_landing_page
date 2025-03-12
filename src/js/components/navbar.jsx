@@ -1,17 +1,42 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 export function Navbar() {
   return (
-    <nav className="navbar navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <a className="navbar-brand" href="#">Start Bootstrap</a>
-        <div>
-          <a className="nav-link d-inline text-light mx-2" href="#">Home</a>
-          <a className="nav-link d-inline text-light mx-2" href="#">About</a>
-          <a className="nav-link d-inline text-light mx-2" href="#">Services</a>
-          <a className="nav-link d-inline text-light mx-2" href="#">Contact</a>
+
+       
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+       
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link active" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNav">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNav">About</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNav">Services</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNav">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
